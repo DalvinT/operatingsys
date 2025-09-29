@@ -1,13 +1,7 @@
-# Makefile
-
-CC=gcc
-CFLAGS=-Wall -g -std=c99
-TARGET=my3proc
-
-all: $(TARGET)
-
-$(TARGET): main3.c
-	$(CC) $(CFLAGS) -o $(TARGET) main3.c
-
-clean:
-	rm -f $(TARGET)
+# list/Makefile
+#
+# Makefile for list implementation and test file.
+#
+# <Author>
+list: list.c main.c
+	gcc list.c main.c -o list
